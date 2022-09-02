@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="txt-box">
+            <h2>POCAZ.</h2>
+            <h3>세상 모든 최애의 포토카드를 찾아 보세요.</h3>
+            <h4>😍 🥰 😘</h4>
+        </div>
+        <div class="m">
+            <div class="m-wrap">
+                <div class="logo community-logo">
+                    <h1><a href="./index.html">POCAZ.</a></h1>
+                    <div class="store-top-box">
+                        <div class="search-box">
+                            <input type="text" />
+                            <button type="button" onclick="location.href='./communitySearchjResult.html'">포카검색</button>
+                        </div>
+                        <button type="button" class="store-write-btn"
+                            onclick="location.href='./storeWrite.html'">올리기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <ul class="idol-list">
+                    <li>아이돌1</li>
+                    <li>아이돌2</li>
+                    <li>아이돌3</li>
+                    <li>아이돌4</li>
+                    <li>아이돌5</li>
+                    <li>아이돌6</li>
+                    <li>아이돌7</li>
+                    <li>아이돌8</li>
+                    <li>아이돌9</li>
+                    <li>아이돌10</li>
+                </ul>
+                <div>
+                    <ul class="poca-list">
+                        <li onclick="location.href='./storeDetail.html'">
+                            <div class="poca-thumb"><img src="./img/9.jpeg" />
+                                <div class="wish-ico">하트</div>
+                            </div>
+                            <div class="poca-info">
+                                <p class="group-name">NewJeans</p>
+                                <p class="member-name">민지</p>
+                                <p class="poca-detail">뉴진스 공방 포카</p>
+                                <p class="poca-desc">민지 얼굴 도라방스 😢</p>
+                                <p class="poca-price"><span>25,000</span>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="poca-thumb"><img src="./img/10.jpeg" />
+                                <div class="wish-ico">하트</div>
+                            </div>
+                            <div class="poca-info">
+                                <p class="group-name">NewJeans</p>
+                                <p class="member-name">민지</p>
+                                <p class="poca-detail">뉴진스 공방 포카</p>
+                                <p class="poca-desc">민지 얼굴 도라방스 😢</p>
+                                <p class="poca-price"><span>25,000</span>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="poca-thumb"><img src="./img/11.jpeg" />
+                                <div class="wish-ico">하트</div>
+                            </div>
+                            <div class="poca-info">
+                                <p class="group-name">NewJeans</p>
+                                <p class="member-name">민지</p>
+                                <p class="poca-detail">뉴진스 공방 포카</p>
+                                <p class="poca-desc">민지 얼굴 도라방스 😢</p>
+                                <p class="poca-price"><span>25,000</span>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="poca-thumb"><img src="./img/12.jpeg" />
+                                <div class="wish-ico">하트</div>
+                            </div>
+                            <div class="poca-info">
+                                <p class="group-name">NewJeans</p>
+                                <p class="member-name">민지</p>
+                                <p class="poca-detail">뉴진스 공방 포카</p>
+                                <p class="poca-desc">민지 얼굴 도라방스 😢</p>
+                                <p class="poca-price"><span>25,000</span>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="poca-thumb"><img src="./img/13.jpeg" />
+                                <div class="wish-ico">하트</div>
+                            </div>
+                            <div class="poca-info">
+                                <p class="group-name">NewJeans</p>
+                                <p class="member-name">민지</p>
+                                <p class="poca-detail">뉴진스 공방 포카</p>
+                                <p class="poca-desc">민지 얼굴 도라방스 😢</p>
+                                <p class="poca-price"><span>25,000</span>원</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <footer>
+                <div class="footer-logo">
+                    <h6><a href="./index.html">POCAZ</a></h6>
+                </div>
+                <p>서울특별시 영등포구 선유로9길 30 106동 청년취업사관학교 영등포캠퍼스</p>
+                <p>Copyright by POCAZ. All rights reserved.</p>
+                <a href="#notion1" target="_blank">개인정보처리방침 |</a>
+                <a href="#notion2" target="_blank">이용약관</a>
+            </footer>
+            <div class="btm-menu">
+                <ul>
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="#home">스토어</a></li>
+                    <li><a href="#home">포카톡</a></li>
+                    <li><a href="./community.html">커뮤니티</a></li>
+                    <li><a href="#home">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let wishIco = document.querySelectorAll('.wish-ico');
+        wishIco.forEach(function (btns) {
+            btns.addEventListener('click', function () {
+                btns.classList.toggle('on');
+            });
+        });
+        let header = document.querySelector('.community-logo');
+        let headerHeight = header.offsetHeight;
+        window.onscroll = () => {
+            let windowTop = window.scrollY;
+            if (windowTop >= headerHeight) {
+                header.classList.add('fix');
+            } else {
+                header.classList.remove('fix');
+            }
+        }
+    </script>
+</body>
+
+</html>

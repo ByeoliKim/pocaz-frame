@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="txt-box">
+            <h2>POCAZ.</h2>
+            <h3>세상 모든 최애의 포토카드를 찾아 보세요.</h3>
+            <h4>😍 🥰 😘</h4>
+        </div>
+        <div class="m">
+            <div class="m-wrap">
+                <div class="community-detail-box-wrap">
+                    <div class="community-detail-top">
+                        <button type="button" onclick="history.back()">뒤로가기</button>
+                        <h2>자유</h2>
+                        <button type="button">...</button>
+                    </div>
+                    <div class="community-detail-contents">
+                        <h3>적당한 제목이 들어올 곳</h3>
+                        <div class="community-detail-contents-top">
+                            <div class="write-wrap">
+                                <div class="board-thumb">
+                                    <img src="./img/10.jpeg" />
+                                </div>
+                                <span class="write-name">작성자명</span>
+                            </div>
+                            <time>2022-08-29</time> <span class="comment">댓글 0</span><span>조회수 1234</span>
+                        </div>
+                        <div class="attached-file">
+                            <img src="./img/5.jpeg">
+                        </div>
+                        <p>내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이
+                            들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다.</p>
+                        <div class="like-btn-wrap">
+                            <button type="button">👍🏻좋아요 ${likeCnt}</button>
+                        </div>
+                    </div>
+                    <div class="community-detail-comment-wrap">
+                        <ul>
+                            <li>
+                                <div class="write-wrap">
+                                    <div class="board-thumb">
+                                        <img src="./img/13.jpeg" />
+                                    </div>
+                                    <span class="write-name">작성자명</span>
+                                </div>
+                                <div class="comment-box">
+                                    <p>댓글 내용이 보여집니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="write-wrap">
+                                    <div class="board-thumb">
+                                        <img src="./img/12.jpeg" />
+                                    </div>
+                                    <span class="write-name">작성자명</span>
+                                </div>
+                                <div class="comment-box">
+                                    <p>댓글 내용이 보여집니다. 댓글 내용이 보여집니다. 댓글 내용이 보여집니다. 댓글 내용이 보여집니다. 댓글 내용이 보여집니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="write-wrap">
+                                    <div class="board-thumb">
+                                        <img src="./img/14.jpeg" />
+                                    </div>
+                                    <span class="write-name">작성자명</span>
+                                </div>
+                                <div class="comment-box">
+                                    <p>댓글 내용이 보여집니다.</p>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button>수정삭제</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="remove-del-box">
+                            <ul>
+                                <li>수정</li>
+                                <li>삭제</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="community-detail-comment-write">
+                        <div class="write-wrap">
+                            <div class="board-thumb">
+                                <img src="./img/10.jpeg" />
+                            </div>
+                            <span class="write-name">작성자명</span>
+                        </div>
+                        <div class="community-detail-comment-write-txt">
+                            <textarea></textarea>
+                            <button>댓글 등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //let html = document.querySelector('html');
+        let btnWrap = document.querySelector('.btn-wrap');
+        let removeDelBox = document.querySelector('.remove-del-box');
+        btnWrap.addEventListener('click', function () {
+            removeDelBox.classList.add('on');
+
+        });
+        // if (removeDelBox.contains('on')) {
+        //     removeDelBox.addEventListener('mouseup', function (e) {
+        //         if (!removeDelBox.contains(e.target)) {
+        //             removeDelBox.style.dispaly = 'none';
+        //         }
+        //     })
+        // }
+
+    </script>
+</body>
+
+</html>

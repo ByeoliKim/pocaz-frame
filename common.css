@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+* { margin: 0; padding: 0; font-family:'Montserrat',Pretendard sans-serif; box-sizing:border-box; letter-spacing:-1px; }
+li { list-style:none; }
+a { color:#000; text-decoration:none; }
+
+/*
+    로고
+*/
+.logo { padding:14px; }
+.logo h1 { font-style:italic; font-weight:800; }
+.logo.fix,
+.community-logo.fix  { position:sticky; top:0; left:0; width:100%; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.10); animation: fixHeader 0.3s; z-index:101; }
+.search-box { position:relative; display:flex; align-items:center; }
+.search-box input { padding:5px 10px; border:0; border-bottom:1px solid #ededed; }
+.search-box button { position:absolute; top:50%; right:0; transform:translateY(-50%); border:0; }
+
+@keyframes fixHeader {
+    0% {
+      top: -5rem;
+    }
+    100% {
+      top: 0;
+    }
+}
+
+
+/*
+    PC main
+*/
+body { background:#000; }
+.bg { position:relative; width:100vw; height:100vh; }
+.bg .txt-box { position:fixed; top:50%; left:50%; margin-top:-80px; margin-left:-450px; }
+.bg .txt-box { color:#fff; text-align:center; letter-spacing:-2px; }
+.bg .txt-box h2 { font-style:italic; font-size:70px; font-weight:800; }
+.bg .txt-box h3 { font-weight:100; font-size:32px; 
+    transition: 0.8s all cubic-bezier(0.215,0.61,0.355,1);
+    -webkit-background: linear-gradient(90deg,#2f4fef 40%,#fff 95%);
+    -moz-background: linear-gradient(90deg,#2f4fef 40%,#fff 95%);
+    background: linear-gradient(90deg,#2f4fef 40%,#fff 95%);-webkit-animation: Bar 11s ease infinite;
+    animation: Bar 11s ease infinite;
+    background-size: 200% 800%;
+    background-position: 80% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg .txt-box h4 { font-size:60px; }
+
+@-webkit-keyframes Bar {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    55% {
+        background-position: 60% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@-moz-keyframes Bar {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    55% {
+        background-position: 60% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes Bar {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    55% {
+        background-position: 45% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.m { position:absolute; right:0; top:0; width:480px; margin-right:40px; background:#fff; }
+
+/*
+    메인 배너
+*/
+.main-slide .swiper { height:500px; }
+.main-slide .swiper .swiper-slide img { width:100%; height:100%; object-fit: cover; }
+.main-slide .swiper .swiper-pagination-fraction { bottom:50%; left:50%; transform:translateX(-50%); width:60px; padding:4px 0; background:rgba(255,255,255,0.3); border-radius:20px; font-size:12px; }
+.main-slide .swiper .swiper-pagination-fraction span { font-size:12px; }
+
+/*
+    콘텐츠 세팅
+*/
+.margin-point { margin:30px 0; }
+.contents { margin:0 14px; }
+.contents .subject { margin:14px 0; }
+.contents .subject h3 { font-weight:700; font-size:24px; }
+.contents .subject h4 { color:#424242; font-weight:400; font-size:14px; }
+.poca-thumb { position:relative; height:200px; margin:0 0 10px; }
+.poca-thumb img { width:100%; height:100%; object-fit:cover; }
+.poca-thumb .wish-ico { position:absolute; bottom:0; right:0; cursor:pointer; }
+.poca-thumb .wish-ico.on { color:rgb(255, 141, 141); }
+.poca-info .group-name { font-size:12px; }
+.poca-info .member-name { font-weight:500; font-size:12px; }
+.poca-info .poca-detail { font-size:13px; }
+.poca-info .poca-desc { font-size:14px; }
+.poca-info .poca-price { line-height:1.4; font-weight:500; font-size:16px; }
+
+/*
+    최근 게시물
+*/
+.board-list ul li { display:flex; justify-content:space-between; margin:0 0 10px; }
+.board-list ul li h4 { margin:0 14px 0 0; font-weight:400; font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.board-list ul li time { font-weight:400; font-size:14px; }
+
+/*
+    BEST 포카
+*/
+
+/*
+    최근 올라온 포카
+*/
+
+/*
+    포꾸 자랑
+*/
+.boast-gallery ul { display:flex; flex-flow:row wrap; }
+.boast-gallery ul li { flex:0 1 33.33%; }
+.boast-gallery ul li img { width:100%; height:100%; object-fit:cover; }
+
+/*
+    footer
+*/
+footer { padding:14px 14px 16px; background:#111; }
+footer .footer-logo { margin:0 0 10px; }
+footer .footer-logo h6 a { color:#fff; font-style:italic; font-weight:800; font-size:18px; }
+footer p { line-height:1.6; color:#999; font-weight:400; font-size:14px; }
+footer a { color:#666; font-weight:400; font-size:12px; }
+
+/*
+    하단 고정 메뉴
+*/
+.m-wrap { position:relative; }
+.btm-menu { position:sticky; bottom:0; left:0; height:50px; border-top:1px solid #d9d4d4; background:#fff; z-index:100; }
+.btm-menu ul { display:flex; align-items:center; justify-content:space-around; height:100%; }
+
+/*
+    community
+*/
+.community-logo { display:flex; justify-content:space-between; }
+.community-tab { position:relative; }
+.community-tab ul { display:flex; justify-content:space-around; margin:0 0 10px; padding:10px 0; border-bottom:1px solid #ddd; }
+.community-tab ul li { font-size:20px; }
+.write-btn { position:absolute; top:50%; right:0; transform:translateY(-50%); background:#ededed; }
+.free-board-sort { padding:0 0 10px; margin:0 0 10px; border-bottom:1px solid #ddd; }
+.free-board-sort ul { display:flex; justify-content:space-around; }
+.free-board-list ul li { display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid #ededed; }
+.free-board-list .board-subject { width:calc(100% - 100px); }
+.free-board-list .board-subject > p { margin:0 10px 5px 0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.write-wrap { display:flex; align-items:center; padding:10px 0 5px; }
+.board-thumb { width:40px; height:40px; margin:0 10px 0 0; border-radius:50%; overflow: hidden; }
+.board-thumb img { width:100%; height:100%; object-fit:cover; }
+.free-board-list .photo { width:100px; height:100px; border:1px solid #ddd; overflow:hidden; }
+.free-board-list .photo img { width:100%; height:100%; object-fit:cover; }
+
+/*
+    community boast
+*/
+/* ---- grid ---- */
+.grid { background:#fff; }
+/* clear fix */
+.grid:after { content:''; display:block; clear:both; } 
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item { width: 50%; }
+.grid-item { margin:0 1% 10px; }
+/* 2 columns wide */
+.grid-item--width2 { width:47%; }
+.grid-item { float: left; }
+.grid-item img { display: block; max-width: 100%; }
+.grid-item--width2 a { display:block; }
+
+/*
+    search result
+*/
+.search-box-wrap { margin:0 14px; }
+.search-result-box { position:relative; padding:14px 0; }
+.search-result-box button { position:absolute; top:50%; left:20px; transform:translateY(-50%); border:0; }
+.search-result-box input { width:100%; height:40px; padding:0 0 0 72px; border:1px solid #ddd; border-radius:50px; }
+
+/*
+    community Detail
+*/
+.community-detail-box-wrap { margin:0 14px; padding:0 0 20px; }
+.community-detail-top { position:relative; display:flex; justify-content:space-between; margin:0 0 10px; padding:10px 0; border-bottom:1px solid #ddd; }
+.community-detail-top h2 { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+.community-detail-contents { padding:0 0 10px; border-bottom:1px solid #ddd; }
+.community-detail-contents-top { margin:0 0 10px; padding:0 0 10px; border-bottom:1px solid #ddd; }
+.attached-file img { width:100%; }
+.like-btn-wrap { display:flex; justify-content:center; align-items:center; margin:14px 0; }
+.community-detail-comment-wrap ul li { position:relative; padding:0 0 10px; border-bottom:1px solid #ddd; }
+.community-detail-comment-wrap ul li button { position:absolute; top:0; right:0; margin:14px 0 0; }
+.community-detail-comment-wrap .btn-wrap {  }
+.community-detail-comment-wrap .remove-del-box { position:absolute; bottom:0; left:0; display:none; width:100%; padding:0; background:#fff; }
+.community-detail-comment-wrap .remove-del-box.on { display:block; }
+.community-detail-comment-wrap .remove-del-box li { display:flex; align-items:center; justify-content:center;height:100px; padding:0; }
+.community-detail-comment-write-txt { display:flex; }
+.community-detail-comment-write textarea { width:100%; }
+.community-detail-comment-write button { margin:0 0 0 10px; }
+.community-write-contents { position:relative; height:100vh; }
+.community-write-contents input { width:100%; height:40px;  padding:0 4px 6px; border:0; border-bottom:1px solid #ddd; font-size:16px; }
+.community-write-contents p { margin:14px 0 0; }
+.attached-file-btn { position:absolute; bottom:0; left:0; display:flex; align-items:center; justify-content:center; width:100%; padding:20px; background:#ededed; }
+
+/*
+    스토어 (장터)
+*/
+.store-top-box { display:flex; align-items:center; }
+.store-top-box .store-write-btn { margin:0 0 0 10px; }
+ul.idol-list { width:100%; margin:0 0 10px; white-space:nowrap; overflow-x:scroll; }
+ul.idol-list li { display:inline-block; }
+ul.poca-list { display:flex; justify-content:space-between; flex-flow:row wrap; }
+ul.poca-list li { flex:0 1 48%; margin:0 0 20px; }
+.poca-list .poca-thumb { height:300px; }
+
+.store-write-box-wrap .attached-file-btn { position:static; }
+
+.store-poca-data-list ul { display:flex; flex-flow:row wrap; }
+.store-poca-data-list ul li { flex:0 1 25%; }
+.store-poca-data-list ul li img { width:100%; }
+
+.store-detail { position:relative; height:100vh; padding:0 14px; }
+.store-detail .store-detail-poca-img img { width:100%; }
+.store-detail .store-detail-top { display:flex; align-items:center; }
+.store-detail .store-detail-db-img { display:inline-block; width:20px; height:20px; margin:0 0 0 5px; border-radius:50%; overflow:hidden; }
+.store-detail .store-detail-db-img img { width:100%; height:100%; object-fit:cover; }
+.store-detail .chat-btn { position:absolute; bottom:0; left:0; display:flex; align-items:center; justify-content:center; width:100%; height:40px; border-top:1px solid #ddd; background:#ededed; }
+
+
+/* pc */
+@media screen and (max-width:1170px){
+    .bg .txt-box h3 { font-size:24px; }
+}
+/* tarblet */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+.bg .txt-box { display:none; }
+.m { position:static; display:block; width:100%; } 
+}
+/* mobile */
+@media screen and (max-width:767px){
+.bg { background:none;}
+.bg .txt-box { display:none; }
+.m { position:static; display:block; width:100%; }
+}

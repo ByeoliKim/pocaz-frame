@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="txt-box">
+            <h2>POCAZ.</h2>
+            <h3>세상 모든 최애의 포토카드를 찾아 보세요.</h3>
+            <h4>😍 🥰 😘</h4>
+        </div>
+        <div class="m">
+            <div class="m-wrap">
+                <div class="store-write-box-wrap">
+                    <div class="community-detail-top store-write-top">
+                        <button type="button" onclick="history.back()">뒤로가기</button>
+                        <h2>팝니다</h2>
+                    </div>
+                    <div class="store-detail">
+                        <div class="store-detail-poca-img"><img src="./img/1.jpeg" /></div>
+                        <div class="store-detail-top">
+                            <span>그룹명|</span> <span>멤버</span><span class="store-detail-db-img"><img
+                                    src="./img/14.jpeg" /></span>
+                        </div>
+                        <p>포카명입니다 포카명이 노출됩니다</p>
+                        <p>한줄소개입니다 한줄소개가 노출됩니다</p>
+                        <p>가격 120,000원</p>
+                        <p>최근 거래가 120,000원</p>
+                        <div class="chat-btn">채팅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //let html = document.querySelector('html');
+        let btnWrap = document.querySelector('.btn-wrap');
+        let removeDelBox = document.querySelector('.remove-del-box');
+        btnWrap.addEventListener('click', function () {
+            removeDelBox.classList.add('on');
+
+        });
+        // if (removeDelBox.contains('on')) {
+        //     removeDelBox.addEventListener('mouseup', function (e) {
+        //         if (!removeDelBox.contains(e.target)) {
+        //             removeDelBox.style.dispaly = 'none';
+        //         }
+        //     })
+        // }
+
+    </script>
+</body>
+
+</html>

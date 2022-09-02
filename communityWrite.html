@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="txt-box">
+            <h2>POCAZ.</h2>
+            <h3>세상 모든 최애의 포토카드를 찾아 보세요.</h3>
+            <h4>😍 🥰 😘</h4>
+        </div>
+        <div class="m">
+            <div class="m-wrap">
+                <div class="community-detail-box-wrap">
+                    <div class="community-detail-top">
+                        <button type="button" onclick="history.back()">뒤로가기</button>
+                        <h2>등록 위치 선택</h2>
+                        <button type="button">등록</button>
+                    </div>
+                    <div class="community-write-contents">
+                        <input type="text" placeholder="제목을 입력해 주세요" />
+                        <!-- <div class="attached-file">
+                            <img src="./img/5.jpeg">
+                        </div> -->
+                        <p>내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이
+                            들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다. 내용이 들어옵니다.</p>
+                        <div class="attached-file-btn">
+                            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"
+                                placeholder="갤러리 버튼">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //let html = document.querySelector('html');
+        let btnWrap = document.querySelector('.btn-wrap');
+        let removeDelBox = document.querySelector('.remove-del-box');
+        btnWrap.addEventListener('click', function () {
+            removeDelBox.classList.add('on');
+
+        });
+        // if (removeDelBox.contains('on')) {
+        //     removeDelBox.addEventListener('mouseup', function (e) {
+        //         if (!removeDelBox.contains(e.target)) {
+        //             removeDelBox.style.dispaly = 'none';
+        //         }
+        //     })
+        // }
+
+    </script>
+</body>
+
+</html>
